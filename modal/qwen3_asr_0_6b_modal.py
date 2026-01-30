@@ -1,8 +1,8 @@
 import modal
 
-APP_NAME = "qwen3-asr-1-7b-streaming"
+APP_NAME = "qwen3-asr-0-6b-streaming"
 CACHE_PATH = "/root/.cache/huggingface"
-MODEL_NAME = "Qwen/Qwen3-ASR-1.7B"
+MODEL_NAME = "Qwen/Qwen3-ASR-0.6B"
 
 app = modal.App(APP_NAME)
 model_cache = modal.Volume.from_name("hf-cache", create_if_missing=True)
